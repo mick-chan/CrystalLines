@@ -1,0 +1,73 @@
+	# Material 'orange-clear'
+MakeNamedMaterial "orange-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 0.383775 0.000000]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'clear-clear'
+MakeNamedMaterial "clear-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 1.000000 1.000000]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'pink-clear'
+MakeNamedMaterial "pink-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 0.119264 0.774227]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'cyan-clear'
+MakeNamedMaterial "cyan-clear"
+   "string type" ["glass"]
+   "color Kr" [0.006041 0.980011 1.000000]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'blue-clear'
+MakeNamedMaterial "blue-clear"
+   "string type" ["glass"]
+   "color Kr" [0.042987 0.098689 0.948966]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'green-clear'
+MakeNamedMaterial "green-clear"
+   "string type" ["glass"]
+   "color Kr" [0.002586 1.000000 0.002586]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'red-clear'
+MakeNamedMaterial "red-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 0.002263 0.002263]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'floor'
+MakeNamedMaterial "floor"
+   "string type" ["matte"]
+   "color Kd" [0.000000 0.000000 0.000000]
+
+	# Material 'reflective-wall'
+MakeNamedMaterial "reflective-wall"
+   "string type" ["glossy"]
+   "color Kd" [0.456263 0.456263 0.456263]
+   "color Ks" [0.047366 0.047366 0.047366] "float index" [0.0] "float uroughness" [0.196116] "float vroughness" [0.196116]
+   "bool multibounce" ["false"]
+
+	# Material 'wall'
+MakeNamedMaterial "wall"
+   "string type" ["matte"]
+   "color Kd" [0.060778 0.060778 0.060778]
+

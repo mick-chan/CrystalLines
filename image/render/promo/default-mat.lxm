@@ -1,0 +1,80 @@
+	# Material 'red-clear'
+MakeNamedMaterial "red-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 0.001963 0.001963]
+   "color Kt" [1.000000 0.001963 0.001963]
+   "float index" [1.805000]
+   "bool architectural" ["false"]
+   "float cauchyb" [0.003540]
+
+	# Material 'lighting'
+Texture "lighting:light:L" "color" "blackbody"
+   "float temperature" [3806.741211]
+
+	# Material 'yellow-clear'
+MakeNamedMaterial "yellow-clear"
+   "string type" ["glass"]
+   "color Kr" [0.851252 1.000000 0.000000]
+   "color Kt" [0.851252 1.000000 0.000000]
+   "float index" [1.805000]
+   "bool architectural" ["false"]
+   "float cauchyb" [0.003540]
+
+	# Material 'green-clear'
+MakeNamedMaterial "green-clear"
+   "string type" ["glass"]
+   "color Kr" [0.002586 1.000000 0.002586]
+   "color Kt" [0.002586 1.000000 0.002586]
+   "float index" [1.805000]
+   "bool architectural" ["false"]
+   "float cauchyb" [0.013420]
+
+	# Material 'purple-clear'
+MakeNamedMaterial "purple-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 0.116576 0.766745]
+   "color Kt" [1.000000 0.116576 0.766745]
+   "float index" [1.805000]
+   "bool architectural" ["false"]
+   "float cauchyb" [0.003540]
+
+	# Material 'blue-clear'
+MakeNamedMaterial "blue-clear"
+   "string type" ["glass"]
+   "color Kr" [0.042987 0.098689 0.948966]
+   "color Kt" [0.004735 0.166964 1.000000]
+   "float index" [1.805000]
+   "bool architectural" ["false"]
+   "float cauchyb" [0.003540]
+
+	# Material 'cyan-clear'
+MakeNamedMaterial "cyan-clear"
+   "string type" ["glass"]
+   "color Kr" [0.001202 1.000000 1.000000]
+   "color Kt" [0.001202 1.000000 1.000000]
+   "float index" [1.805000]
+   "bool architectural" ["false"]
+   "float cauchyb" [0.003540]
+
+	# Material 'orange-clear'
+MakeNamedMaterial "orange-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 0.383775 0.000000]
+   "color Kt" [1.000000 0.383775 0.000000]
+   "float index" [1.805000]
+   "bool architectural" ["false"]
+   "float cauchyb" [0.003540]
+
+	# Material 'clear-clear'
+MakeNamedMaterial "clear-clear"
+   "string type" ["glass"]
+   "color Kr" [1.000000 1.000000 1.000000]
+   "color Kt" [1.000000 1.000000 1.000000]
+   "float index" [2.417000]
+   "bool architectural" ["false"]
+
+	# Material 'wall'
+MakeNamedMaterial "wall"
+   "string type" ["matte"]
+   "color Kd" [0.000000 0.000000 0.000000]
+

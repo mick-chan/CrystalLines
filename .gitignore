@@ -1,0 +1,29 @@
+# Build artifacts
+bin/
+*.jar
+*.class
+*.dex
+*.apk
+
+# IDE
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SVN
+.svn/
+
+# Android generated
+colour/gen/
+colour/bin/
+colour/local.properties
+
+# Keystore (sensitive)
+android_keystore
+
+# Data files
+scores.dat

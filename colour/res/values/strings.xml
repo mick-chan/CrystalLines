@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CrystalLines Test</string>
+    <string name="free_key">Free</string>
+    <string name="pro_only">Available in Pro version</string>
+    <string name="ver_name">1.0</string>
+    <string name="edit_settings">Settings</string>
+    <string name="score_text">Score</string>
+    <string name="next_text">Next</string>
+    <string name="score_value">ScoreValue</string>
+    <string name="high_scores_text">High Scores!</string>
+    <string name="high_score_name_column">Name</string>
+    <string name="high_score_score_column">Score</string>
+    <string name="high_scores_close">Close</string>
+    <string name="menu_about">About</string>
+    <string name="menu_high_score">High Scores</string>
+    <string name="menu_undo">Undo</string>
+    <string name="menu_how_to_play">Instructions</string>
+    <string name="menu_new_game">New Game</string>  
+    <string name="menu_settings">Settings</string>
+    <string name="pref_sound_title">Sound</string>
+    <string name="pref_sound_desc">Enable sound effects</string>
+    <string name="pref_haptics_title">Haptics</string>
+    <string name="pref_haptics_desc">Enable vibration feedback</string>
+    <string name="pref_animate_title">Animation</string>
+    <string name="pref_animate_desc">Enable animation of crystals appearing and disappearing</string>
+    <string name="pref_balls_per_line_name">Difficulty</string>
+    <string name="pref_balls_per_line_desc">Select the minimum number of crystals that form a line</string>
+    <string name="pref_theme_name">Themes</string>
+    <string name="pref_theme_desc">Select your preferred crystal style</string>
+    <string name="pref_arcade_title">Arcade Mode</string>
+    <string name="pref_arcade_desc">Introduce wildcard and dud crystals!</string>
+    <string name="pref_shake_title">Shake Mode</string>
+    <string name="pref_shake_desc">Discard next crystals and obtain a new set when device is shaken!</string>
+    <string name="shaken_message">Jiggled next crystals!</string>
+    <string name="game_over_message">Game Over!</string>
+    
+    <string-array name="array_balls_per_line_values">
+        <item>"4"</item>
+		<item>"5"</item>
+		<item>"6"</item>
+    </string-array>
+    
+	<string-array name="array_balls_per_line_names">
+		<item>4 crystals (Easy)</item>
+		<item>5 crystals (Normal)</item>
+		<item>6 crystals (Hard)</item>
+	</string-array>
+
+    <!-- 
+	    Index values are saved in the preferences.
+	    To maintain consistency on upgrade, do not reassign
+	    index values to other themes. 
+    -->
+    <string-array name="array_theme_values">
+        <item>1</item>
+        <item>6</item>        
+        <item>5</item>        
+        <item>8</item> 
+        <item>0</item>
+        <item>12</item>
+        <item>7</item>  
+        <item>9</item>         
+        <item>3</item>
+        <item>2</item>
+        <item>10</item> 
+        <item>4</item>
+        <item>11</item>
+    </string-array>
+    
+    <string-array name="array_theme_names">
+        <item>Accessibility</item> 
+        <item>Billiards</item>        
+        <item>Biohazard</item>        
+        <item>Chess</item>  
+        <item>Crystals</item>
+        <item>Crystal Stars</item>
+        <item>Extra-terrestrials</item>  
+        <item>Infection!</item>  
+        <item>Juicy Fruits</item>        
+        <item>Mahjong</item>     
+        <item>Personalities</item>  
+        <item>Sports</item> 
+        <item>Underwater World</item>         
+    </string-array>
+    	
+	
+</resources>

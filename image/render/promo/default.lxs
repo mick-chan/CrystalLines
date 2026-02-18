@@ -1,0 +1,97 @@
+# LuxRender v0.7.1 Scene File
+# Exported by LuxBlend Blender Exporter
+
+LookAt 4.623013 5.148619 -0.468322 
+       4.188037 4.599123 -1.181658 
+       -0.447379 -0.555625 0.700809
+
+
+Camera "perspective"
+   "float fov" [110.982956]
+   "float lensradius" [0.011000]
+   "float focaldistance" [2.476862]
+   "integer blades" [6]
+   "string distribution" ["uniform"]
+   "integer power" [100]
+   "float screenwindow" [-1.000000 1.000000 -0.488281 0.488281]
+
+
+Film "fleximage"
+   "integer xresolution" [2048] 
+   "integer yresolution" [1000]
+   "integer displayinterval" [12]
+   "integer writeinterval" [120]
+   "integer haltspp" [0]
+   "integer halttime" [0]
+   "string tonemapkernel" ["reinhard"]
+   "bool premultiplyalpha" ["true"]
+   "float reinhard_prescale" [1.000000]
+   "float reinhard_postscale" [1.200000]
+   "float reinhard_burn" [6.000000]
+   "string ldr_clamp_method" ["lum"]
+   "bool write_exr" ["false"]
+   "bool write_png" ["true"]
+   "string write_png_channels" ["RGB"]
+   "bool write_png_16bit" ["false"]
+   "bool write_png_gamutclamp" ["true"]
+   "bool write_tga" ["false"]
+   "string filename" ["d:\\Documents\\colour\\image\\render\\promo\\default"]
+   "bool write_resume_flm" ["false"]
+   "bool restart_resume_flm" ["true"]
+   "integer reject_warmup" [128]
+   "bool debug" ["false"]
+   "float colorspace_white" [0.314275 0.329411]
+   "float colorspace_red" [0.630000 0.340000]
+   "float colorspace_green" [0.310000 0.595000]
+   "float colorspace_blue" [0.155000 0.070000]
+   "float gamma" [2.200000]
+
+PixelFilter "mitchell"
+   "float xwidth" [1.500000]
+   "float ywidth" [1.500000]
+   "float B" [0.333300]
+   "float C" [0.333300]
+   "bool supersample" ["true"]
+
+Sampler "metropolis"
+   "float largemutationprob" [0.400000]
+
+SurfaceIntegrator "bidirectional"
+   "integer eyedepth" [16]
+   "integer lightdepth" [16]
+
+VolumeIntegrator "single"
+   "float stepsize" [1.000000]
+
+Accelerator "tabreckdtree"
+   "integer intersectcost" [80]
+   "integer traversalcost" [1]
+   "float emptybonus" [0.200000]
+   "integer maxprims" [1]
+   "integer maxdepth" [-1]
+
+WorldBegin
+
+Transform [0.00999999977648 0.0 0.0 0.0  0.0 0.00999999977648 0.0 0.0  0.0 0.0 0.00999999977648 0.0  0.0 0.0 0 1.0]
+
+AttributeBegin
+	Rotate 0.00 1 0 0
+	Rotate 0.00 0 1 0
+	Rotate 270.00 0 0 1
+	
+LightGroup "default"
+LightSource "infinitesample"
+   "float gain" [1.000000]
+   "string mapping" ["angular"]
+   "float gamma" [1.000000]
+   "string mapname" ["d:\\Documents\\colour\\image\\hdr\\uffizi_probe.hdr"]
+AttributeEnd
+
+Include "default-mat.lxm"
+
+Include "default-geom.lxo"
+
+Include "default-vol.lxv"
+
+WorldEnd
+

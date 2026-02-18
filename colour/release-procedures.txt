@@ -1,0 +1,12 @@
+Release checklist
+-----------------
+
+* Ensure all admob is removed from manifest for pro version.
+* Remove debugging flag in manifest.
+* Rename the package. crystallinespro or crystallinesfree.
+  - Rename in manifest first.
+  - Rename all XML referring to package name.
+  - Refactor package name.
+  - Rename the folder in SVN - rename back to original then SVN rename.
+* Change icon for free version.
+* Up the version number and version name.

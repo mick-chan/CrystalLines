@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="@string/menu_new_game" android:titleCondensed="@string/menu_new_game" android:visible="true" android:id="@+id/menu_new_game" android:enabled="true" android:icon="@drawable/ic_menu_emoticons"></item><item android:id="@+id/menu_undo" android:enabled="true" android:visible="true" android:icon="@android:drawable/ic_menu_revert" android:titleCondensed="@string/menu_undo" android:title="@string/menu_undo"></item><item android:titleCondensed="@string/menu_settings" android:icon="@android:drawable/ic_menu_preferences" android:visible="true" android:title="@string/menu_settings" android:enabled="true" android:id="@+id/menu_settings"></item><item android:enabled="true" android:id="@+id/menu_high_scores" android:icon="@drawable/ic_menu_star" android:title="@string/menu_high_score" android:visible="true" android:titleCondensed="@string/menu_high_score"></item><item android:id="@+id/menu_how_to_play" android:titleCondensed="@string/menu_how_to_play" android:title="@string/menu_how_to_play" android:enabled="true" android:visible="true" android:icon="@android:drawable/ic_menu_help"></item>
+<item android:icon="@android:drawable/ic_menu_info_details" android:id="@+id/menu_about" android:enabled="true" android:title="@string/menu_about" android:visible="true" android:titleCondensed="@string/menu_about"></item>
+
+
+
+
+
+
+</menu>

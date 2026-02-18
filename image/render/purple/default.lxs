@@ -1,0 +1,94 @@
+# LuxRender v0.7.1 Scene File
+# Exported by LuxBlend Blender Exporter
+
+LookAt 0.000000 0.000000 9.000000 
+       0.000000 0.000000 8.000000 
+       -1.000000 -0.000000 0.000000
+
+
+Camera "perspective"
+   "float fov" [13.518163]
+   "float screenwindow" [-1.000000 1.000000 -1.000000 1.000000]
+
+
+Film "fleximage"
+   "integer xresolution" [200] 
+   "integer yresolution" [200]
+   "integer displayinterval" [12]
+   "integer writeinterval" [120]
+   "integer haltspp" [0]
+   "integer halttime" [0]
+   "string tonemapkernel" ["reinhard"]
+   "bool premultiplyalpha" ["true"]
+   "float reinhard_prescale" [1.000000]
+   "float reinhard_postscale" [1.200000]
+   "float reinhard_burn" [6.000000]
+   "string ldr_clamp_method" ["lum"]
+   "bool write_exr" ["false"]
+   "bool write_png" ["true"]
+   "string write_png_channels" ["RGB"]
+   "bool write_png_16bit" ["false"]
+   "bool write_png_gamutclamp" ["true"]
+   "bool write_tga" ["false"]
+   "string filename" ["d:\\Documents\\colour\\image\\render\\purple\\default"]
+   "bool write_resume_flm" ["false"]
+   "bool restart_resume_flm" ["true"]
+   "integer reject_warmup" [128]
+   "bool debug" ["false"]
+   "float colorspace_white" [0.314275 0.329411]
+   "float colorspace_red" [0.630000 0.340000]
+   "float colorspace_green" [0.310000 0.595000]
+   "float colorspace_blue" [0.155000 0.070000]
+   "float gamma" [2.200000]
+
+PixelFilter "mitchell"
+   "float xwidth" [1.500000]
+   "float ywidth" [1.500000]
+   "float B" [0.333300]
+   "float C" [0.333300]
+   "bool supersample" ["true"]
+
+Sampler "metropolis"
+   "float largemutationprob" [0.400000]
+
+SurfaceIntegrator "bidirectional"
+   "integer eyedepth" [16]
+   "integer lightdepth" [16]
+
+VolumeIntegrator "single"
+   "float stepsize" [1.000000]
+
+Accelerator "tabreckdtree"
+   "integer intersectcost" [80]
+   "integer traversalcost" [1]
+   "float emptybonus" [0.200000]
+   "integer maxprims" [1]
+   "integer maxdepth" [-1]
+
+WorldBegin
+
+Transform [0.10000000149 0.0 0.0 0.0  0.0 0.10000000149 0.0 0.0  0.0 0.0 0.10000000149 0.0  0.0 0.0 0 1.0]
+
+AttributeBegin
+
+LightGroup "default"
+LightSource "sky" 
+   "float gain" [1.000000]
+   "float turbidity" [2.200000]
+   "vector sundir" [-0.256042 -0.908090 0.331383]
+LightGroup "default"
+LightSource "sun" 
+   "float gain" [1.000000]
+   "vector sundir" [-0.256042 -0.908090 0.331383]
+   "float relsize" [1.000000]
+   "float turbidity" [2.200000]
+AttributeEnd
+
+Include "default-mat.lxm"
+
+Include "default-geom.lxo"
+
+Include "default-vol.lxv"
+
+WorldEnd
+

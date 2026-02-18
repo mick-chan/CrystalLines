@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <PreferenceCategory android:title="Game Options">
+        <ListPreference
+	         android:title="@string/pref_balls_per_line_name"
+	         android:summary="@string/pref_balls_per_line_desc"
+	         android:key="android:@+id/pref_balls_per_line"
+	         android:defaultValue="5"
+	         android:entries="@array/array_balls_per_line_names"
+	         android:entryValues="@array/array_balls_per_line_values" 
+	    />
+        <CheckBoxPreference
+            android:key="android:@+id/pref_arcade"
+            android:title="@string/pref_arcade_title"
+            android:summary="@string/pref_arcade_desc"
+            android:defaultValue="false"
+        />
+        <CheckBoxPreference
+            android:key="android:@+id/pref_shake"
+            android:title="@string/pref_shake_title"
+            android:summary="@string/pref_shake_desc"
+            android:defaultValue="true"
+        />   
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Game Experience">
+        <ListPreference
+             android:title="@string/pref_theme_name"
+             android:summary="@string/pref_theme_desc"
+             android:key="android:@+id/pref_theme"
+             android:defaultValue="0"
+             android:entries="@array/array_theme_names"
+             android:entryValues="@array/array_theme_values" 
+        />
+        <CheckBoxPreference
+            android:key="android:@+id/pref_sound"
+            android:title="@string/pref_sound_title"
+            android:summary="@string/pref_sound_desc"
+            android:defaultValue="true"
+        />
+        <CheckBoxPreference
+            android:key="android:@+id/pref_vibrate"
+            android:title="@string/pref_haptics_title"
+            android:summary="@string/pref_haptics_desc"
+            android:defaultValue="true"
+        />
+        <CheckBoxPreference
+            android:key="android:@+id/pref_animate"
+            android:title="@string/pref_animate_title"
+            android:summary="@string/pref_animate_desc"
+            android:defaultValue="true"
+        />
+    </PreferenceCategory>    
+</PreferenceScreen>

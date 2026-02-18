@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/high_scores_dialog"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_marginLeft="20dp"
+	android:layout_marginRight="20dp"
+	android:layout_marginBottom="20dp"
+	android:layout_marginTop="20dp"
+>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+	  >
+		<ImageView android:id="@+id/high_scores_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:scaleType="fitCenter"
+	        android:layout_gravity="top"
+		/>
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/high_scores_table"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	    
+	        android:layout_marginLeft="20dp"
+		    android:layout_marginBottom="20dp"
+	        android:layout_marginTop="20dp"
+	        android:paddingRight="20dp"
+		    android:stretchColumns="1"
+		    android:layout_weight="4"
+		    android:layout_gravity="center"
+		>   	
+	    </TableLayout>
+	</LinearLayout>
+</ScrollView>

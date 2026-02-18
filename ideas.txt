@@ -1,0 +1,13 @@
+Ideas
+-----
+
+* Glass playing field where the dividing lines are thin etches in the glass.
+* Translucent balls of different colours which have a glossy finish.
+* Animate the balls - inflate and deflate, or shows smiley face when selected.
+* Animate path which ball travels.
+* Main icon - clear glass of balls.
+* Improve scoring by adding bonuses and display with toast.
+* show animated path of moves 
+* Add themes including accessibility - numbers on crystals, mahjong style.
+* Add option for extended playing field.
+* Allow wildcard colour.
