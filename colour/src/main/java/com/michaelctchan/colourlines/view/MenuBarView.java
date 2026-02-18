@@ -44,44 +44,36 @@ public class MenuBarView implements Constants
 
     public boolean onMenuItemSelected(int featureId, MenuItem item)
     {
-        switch(item.getItemId()) 
-        {
-        case R.id.menu_new_game: 
+        int id = item.getItemId();
+        if (id == R.id.menu_new_game) {
             Colours.resetColours();
             mModel.prepareNewGame();
             mView.update();
             return true;
-            
-        case R.id.menu_high_scores:
+        } else if (id == R.id.menu_high_scores) {
             mContext.showDialog(Constants.DIALOG_HIGH_SCORES_ID);
             return true;
-            
-        case R.id.menu_undo:
+        } else if (id == R.id.menu_undo) {
             if (mModel.canUndo())
             {
-                mModel.undoMove();                
+                mModel.undoMove();
                 mView.update();
             }
             return true;
-            
-        case R.id.menu_how_to_play:
+        } else if (id == R.id.menu_how_to_play) {
             mContext.showDialog(Constants.DIALOG_HOW_TO_PLAY_ID);
             return true;
-            
-        case R.id.menu_about:
+        } else if (id == R.id.menu_about) {
             mContext.showDialog(Constants.DIALOG_ABOUT_ID);
             return true;
-            
-        case R.id.menu_settings:
+        } else if (id == R.id.menu_settings) {
             Intent intent = new Intent(mContext, SettingsScreen.class);
             intent.putExtra(Constants.ACCELEROMETER_AVAILABLE, mContext.isAccelerometerAvailable());
             intent.putExtra(Constants.VIBRATOR_AVAILABLE, mContext.isVibratorAvailable());
             intent.putExtra(Constants.IS_FULL_VERSION, mContext.isFullVersion());
             mContext.startActivity(intent);
             return true;
-            
-        default: 
-            return false;
         }
+        return false;
     }
 }

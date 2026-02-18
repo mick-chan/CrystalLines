@@ -99,7 +99,7 @@ public class PanelView implements Constants, Serializable
             for (int c = 0; c < row.getChildCount(); ++c)
             {
                 SquareView sv = (SquareView)row.getChildAt(c); 
-                sv.animate();
+                sv.animateSquare();
             }
         }     
     }

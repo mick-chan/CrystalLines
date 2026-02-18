@@ -49,7 +49,6 @@ public class MovesHandler implements View.OnClickListener, Constants
     {
         mContext.playSoundLineCleared();
         mContext.vibrateLong();
-        mContext.updateAd();
     }
     
     @Override

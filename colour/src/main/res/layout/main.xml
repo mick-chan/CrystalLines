@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" 
-    xmlns:crystal="http://schemas.android.com/apk/res/com.michaelctchan.colourlines"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 >
@@ -110,14 +109,5 @@
 	
 	</LinearLayout>
 
-    <com.admob.android.ads.AdView
-        android:id="@+id/ad"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        crystal:backgroundColor="#000000"
-        crystal:primaryTextColor="#FFFFFF"
-        crystal:secondaryTextColor="#CCCCCC"
-        android:layout_alignParentBottom="true" 
-    />
 </RelativeLayout>  
  

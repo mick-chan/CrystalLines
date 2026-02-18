@@ -93,7 +93,7 @@ public class PlayingFieldView implements Constants, Serializable
     public void animateMove()
     {
         for(Iterator<SquareView> i = mSquareViews.iterator(); i.hasNext();)
-            i.next().animate();
+            i.next().animateSquare();
     }
     
     synchronized public void update()

@@ -1,14 +1,20 @@
 # Build artifacts
 bin/
-*.jar
 *.class
 *.dex
 *.apk
+
+# Gradle
+.gradle/
+build/
+local.properties
 
 # IDE
 .classpath
 .project
 .settings/
+*.iml
+.idea/
 
 # OS
 .DS_Store
@@ -20,10 +26,17 @@ Thumbs.db
 # Android generated
 colour/gen/
 colour/bin/
-colour/local.properties
 
 # Keystore (sensitive)
 android_keystore
 
 # Data files
 scores.dat
+
+# Claude Code
+.claude/
+
+# Android SDK (if installed locally)
+platforms/
+build-tools/
+licenses/

@@ -86,7 +86,7 @@ public class SquareView extends ImageView implements Constants
             startAnimation(mFadeIn);
     }
     
-    public void animate()
+    public void animateSquare()
     {
         if (!mContext.isAnimationOn())
             return;

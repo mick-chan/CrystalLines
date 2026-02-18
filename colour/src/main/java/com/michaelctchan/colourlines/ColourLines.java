@@ -24,12 +24,8 @@ import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.AlphaAnimation;
 import android.widget.Toast;
 
-import com.admob.android.ads.AdManager;
-import com.admob.android.ads.AdView;
 import com.michaelctchan.colourlines.model.Panel;
 import com.michaelctchan.colourlines.model.PanelData;
 import com.michaelctchan.colourlines.model.PlayingField;
@@ -77,10 +73,9 @@ public class ColourLines extends Activity implements OnSharedPreferenceChangeLis
     private int mPop;
     
     //
-    // Advertisement.
+    // Version.
     //
     private boolean mIsFullVersion;
-    private AdView mAd;
     
     
     private void saveState()
@@ -206,19 +201,6 @@ public class ColourLines extends Activity implements OnSharedPreferenceChangeLis
         //
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         
-        //
-        // Set up Admob.
-        //
-        AdManager.setTestDevices(new String[] { AdManager.TEST_EMULATOR, "1000d2bc4743" });
-        mAd = (AdView)findViewById(R.id.ad);
-        if (!mIsFullVersion)
-        {
-            updateAd();
-        }
-        else
-        {
-            mAd.setVisibility(View.INVISIBLE);
-        }
     }
     
     public int getCrystalTheme()
@@ -234,21 +216,6 @@ public class ColourLines extends Activity implements OnSharedPreferenceChangeLis
     public boolean isFullVersion()
     {
         return mIsFullVersion;
-    }
-   
-    public void updateAd()
-    {
-        if (!mIsFullVersion)
-        {
-            // Grab new ad and fade the ad in over 4/10 of a second.
-            mAd.setVisibility(View.VISIBLE);
-            mAd.requestFreshAd();
-            AlphaAnimation animation = new AlphaAnimation( 0.0f, 1.0f );
-            animation.setDuration(600);
-            animation.setFillAfter(true);
-            animation.setInterpolator(new AccelerateInterpolator());
-            mAd.startAnimation(animation);
-        }
     }
    
     public boolean isAccelerometerAvailable()
